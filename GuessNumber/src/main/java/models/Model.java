@@ -20,6 +20,11 @@ public class Model {
         secretNumber = new Random().nextInt(topLimit - 1) + bottomLimit + 1;
     }
 
+    void setCorrectAnswer(int correctAnswer) {
+        this.secretNumber = correctAnswer;
+    }
+
+
     private void settingOfLimits(int limit) {
         topLimit = limit;
     }
